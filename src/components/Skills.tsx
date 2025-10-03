@@ -2,6 +2,16 @@ import React from 'react';
 import { skillsData, skillLevels } from '../data/skills';
 import { Star, Clock } from 'lucide-react';
 
+interface Skill {
+  name: string;
+  level: number;
+  years: number;
+}
+
+interface ToolSkill {
+  name: string;
+}
+
 export const Skills: React.FC = () => {
   const renderStars = (level: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -47,7 +57,7 @@ export const Skills: React.FC = () => {
                   <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">{category}</h3>
                   {category === 'Tools' ? (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {skills.map((skill: any) => (
+                      {skills.map((skill: ToolSkill) => (
                         <div key={skill.name} className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border border-gray-200">
                           <span className="font-medium text-gray-900">{skill.name}</span>
                         </div>
@@ -55,7 +65,7 @@ export const Skills: React.FC = () => {
                     </div>
                   ) : (
                     <div className="space-y-6">
-                      {skills.map((skill: any) => (
+                      {skills.map((skill: Skill) => (
                         <div key={skill.name} className="border-b border-gray-100 pb-4 last:border-b-0">
                           <div className="flex justify-between items-center mb-3">
                             <span className="font-bold text-gray-900 text-lg">{skill.name}</span>
