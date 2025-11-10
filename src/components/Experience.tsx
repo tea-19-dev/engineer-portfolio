@@ -25,7 +25,7 @@ export const Experience: React.FC = () => {
                     <h3 className="text-2xl font-bold mb-3 text-gray-900">{exp.position}</h3>
                     <p className="text-blue-600 font-bold mb-3 text-lg">{exp.company}</p>
                     <p className="text-gray-500 text-sm mb-6 bg-gray-50 inline-block px-3 py-1 rounded-full">{exp.period}</p>
-                    <p className="text-gray-700 text-lg leading-relaxed">{exp.description}</p>
+                    <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-wrap">{exp.description}</p>
                   </div>
                 </div>
               </div>
