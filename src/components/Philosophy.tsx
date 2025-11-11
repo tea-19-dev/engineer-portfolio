@@ -14,7 +14,7 @@ export const Philosophy: React.FC = () => {
             {philosophyData.content.map((item, index) => {
               return (
                 <div key={index} className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-6">{item.title}</h3>
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-6">{item.title}</h3>
                   <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-wrap">{item.description}</p>
                 </div>
               );
