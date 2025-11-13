@@ -79,7 +79,7 @@ export const Skills: React.FC = () => {
                               {renderStars(skill.level)}
                             </div>
                             <span className="text-sm text-gray-600 font-medium">
-                              {skillLevels[skill.level as keyof typeof skillLevels]}
+                              {skillLevels[skill.level as keyof typeof skillLevels].title}
                             </span>
                           </div>
                         </div>
