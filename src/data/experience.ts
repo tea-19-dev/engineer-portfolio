@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     company: "小学校〜高校時代",
-    position: "サッカー少年",
+    position: "おとなしいサッカー少年",
     period: "〜2018年",
     description: "引っ込み思案な子供でしたが、小学1年生から地元のサッカークラブに入れてもらい、休日や放課後はほとんどサッカーをして過ごしました。勉強も好きな方で、友人たちとテスト結果を競うのを楽しんでいました。"
   },
@@ -22,8 +22,8 @@ export const experienceData = [
   },
   {
     id: 4,
-    company: "toB Saas 自社開発企業",
-    position: "2社目 エンジニア",
+    company: "toB Saas 自社開発",
+    position: "エンジニア",
     period: "2025年6月 - 現在",
     description: "エンジニア数名で、 Saasの保守・開発（Rails,React,GraphQL）。自社開発ならではの要件定義フェーズから参画でき、顧客理解や機能提案などプロダクト志向のエンジニアを意識しています。"
   }

@@ -97,8 +97,8 @@ export const ContactForm: React.FC = () => {
               id="message"
               name="message"
               required
-              rows={6}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
+              rows={10}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-transparent duration-300"
               placeholder="ご相談内容、ご依頼の詳細など"
             />
             <ValidationError 

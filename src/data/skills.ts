@@ -1,9 +1,8 @@
 export const skillsData = {
   "Frontend": [
-    { name: "React", level: 5, years: 4 },
-    { name: "Vue.js", level: 4, years: 3 },
-    { name: "TypeScript", level: 4, years: 3 },
-    { name: "Next.js", level: 4, years: 2 }
+    { name: "React", level: 5, years: '半' },
+    { name: "Vue.js", level: 4, years: 1.5 },
+    { name: "TypeScript", level: 4, years: 3 }
   ],
   "Backend": [
     { name: "Node.js", level: 4, years: 4 },
@@ -30,9 +29,9 @@ export const skillsData = {
 };
 
 export const skillLevels = {
-  1: "基礎レベル",
-  2: "初級レベル", 
-  3: "中級レベル",
-  4: "上級レベル",
-  5: "エキスパート"
+  1: { title: "ビギナー", detail: "少し触った程度" },
+  2: { title: "初級者", detail: "上級者の指導が必要" }, 
+  3: { title: "中級者", detail: "自立して設計・実装" },
+  4: { title: "プロ", detail: "社内でリード" },
+  5: { title: "エキスパート", detail: "社外でもリード" },
 };

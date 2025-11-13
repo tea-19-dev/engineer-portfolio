@@ -5,7 +5,7 @@ import { Star, Clock } from 'lucide-react';
 interface Skill {
   name: string;
   level: number;
-  years: number;
+  years: number | string;
 }
 
 interface ToolSkill {
@@ -35,22 +35,22 @@ export const Skills: React.FC = () => {
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-8 text-center">Skills</h2>
           
           {/* スキルレベル詳細説明 */}
-          <div className="max-w-4xl mx-auto mb-12 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+          <div className="max-w-5xl mx-auto mb-12 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
             <h3 className="text-xl font-bold mb-6 text-center text-gray-900">スキルレベル詳細</h3>
             <div className="grid md:grid-cols-5 gap-4">
-              {Object.entries(skillLevels).map(([level, description]) => (
+              {Object.entries(skillLevels).map(([level, details]) => (
                 <div key={level} className="text-center p-4 bg-gray-50 rounded-lg">
                   <div className="flex justify-center mb-2">
                     {renderStars(parseInt(level))}
                   </div>
-                  <div className="font-bold text-blue-600 mb-1">レベル {level}</div>
-                  <div className="text-sm text-gray-600">{description}</div>
+                  <div className="font-bold text-blue-600 mb-1">{level}: {details.title}</div>
+                  <div className="text-sm text-gray-600">{details.detail}</div>
                 </div>
               ))}
             </div>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="space-y-8">
               {Object.entries(skillsData).map(([category, skills]) => (
                 <div key={category} className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">

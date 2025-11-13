@@ -12,11 +12,8 @@ export const Experience: React.FC = () => {
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-12 text-center">Experience</h2>
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
-            {[...experienceData].reverse().map((exp, index) => (
+            {[...experienceData].reverse().map((exp) => (
               <div key={exp.id} className="relative">
-                {index !== experienceData.length - 1 && (
-                  <div className="absolute left-8 top-16 w-px h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
-                )}
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
                     <Calendar className="w-6 h-6 text-white" />
