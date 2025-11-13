@@ -71,7 +71,13 @@ export const Skills: React.FC = () => {
                             <span className="font-bold text-gray-900 text-lg">{skill.name}</span>
                             <div className="flex items-center space-x-2">
                               <Clock className="w-4 h-4 text-gray-400" />
-                              <span className="text-sm text-gray-500">{skill.years}年</span>
+                              <span className="text-sm text-gray-500">
+                                {skill.years === 0 ? (
+                                  '半年未満'
+                                ) : (
+                                  `${skill.years}年`
+                                )}
+                              </span>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mb-2">

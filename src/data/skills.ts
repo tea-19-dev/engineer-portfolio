@@ -1,30 +1,25 @@
 export const skillsData = {
   "Frontend": [
-    { name: "React", level: 5, years: '半' },
-    { name: "Vue.js", level: 4, years: 1.5 },
-    { name: "TypeScript", level: 4, years: 3 }
+    { name: "Vue.js（Nuxt.js）", level: 2, years: 1.5 },
+    { name: "React", level: 2, years: '半' },
+    { name: "TypeScript", level: 2, years: 1.5 }
   ],
   "Backend": [
-    { name: "Node.js", level: 4, years: 4 },
-    { name: "Python", level: 3, years: 2 },
-    { name: "Express", level: 4, years: 3 },
-    { name: "Django", level: 3, years: 2 },
-    { name: "PostgreSQL", level: 4, years: 3 },
-    { name: "MongoDB", level: 4, years: 3 },
-    { name: "Redis", level: 3, years: 2 },
-    { name: "MySQL", level: 4, years: 4 }
+    { name: "Ruby on Rails（メイン技術）", level: 3, years: 3.5 },
+    { name: "PHP（Laravel）", level: 1, years: 0 },
+    { name: "Python", level: 1, years: 0 },
   ],
   "Others": [
-    { name: "Docker", level: 4, years: 2 },
-    { name: "AWS", level: 3, years: 2 },
-    { name: "Git", level: 5, years: 5 },
-    { name: "Linux", level: 4, years: 3 }
+    { name: "MySQL", level: 2, years: 3.5 },
+    { name: "Docker", level: 2, years: 2 },
+    { name: "AWS", level: 1, years: 0 },
+    { name: "Git", level: 3, years: 4 },
   ],
   "Tools": [
-    { name: "Slack" },
-    { name: "Notion" },
-    { name: "Github" },
-    { name: "Gitlab" }
+    { name: "Slack", level: 1, years: '' },
+    { name: "Notion", level: 1, years: '' },
+    { name: "Github", level: 1, years: '' },
+    { name: "Gitlab", level: 1, years: '' },
   ]
 };
 
