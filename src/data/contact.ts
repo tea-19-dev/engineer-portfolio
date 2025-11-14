@@ -1,5 +1,5 @@
 export const contactData = {
-  email: "taro.tanaka@example.com",
-  github: "https://github.com/tarotanaka",
-  twitter: "https://twitter.com/tarotanaka"
+  email: "tea.19.job@gmail.com",
+  github: "https://github.com/tea-19-dev",
+  twitter: "https://x.com/tea_____19"
 };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { worksData } from '../data/works';
+import { WorkLinks } from './WorkLinks';
 
 interface Work {
   id: number;
@@ -8,8 +9,8 @@ interface Work {
   description: string;
   images: string[];
   technologies: string[];
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
   detailedDescription: string;
 }
 
@@ -49,23 +50,25 @@ export const Works: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-12 text-center">Works</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {worksData.map((work) => (
+          {worksData.map((work: Work) => (
             <div 
               key={work.id} 
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 cursor-pointer"
               onClick={() => openModal(work)}
             >
               <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-blue-600/20"></div>
-                <img 
-                  src={work.images[0]} 
-                  alt={work.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
+                <div className="absolute inset-0"></div>
+                <div className='p-5'>
+                  <img 
+                    src={work.images[0]} 
+                    alt={work.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{work.title}</h3>
@@ -78,22 +81,7 @@ export const Works: React.FC = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <a
-                    href={work.github}
-                    className="flex items-center px-4 py-2 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 border border-gray-200"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Github className="w-5 h-5 mr-2" />
-                    Code
-                  </a>
-                  <a
-                    href={work.demo}
-                    className="flex items-center px-4 py-2 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 border border-gray-200"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    Demo
-                  </a>
+                  <WorkLinks work={work}/>
                 </div>
               </div>
             </div>
@@ -118,10 +106,10 @@ export const Works: React.FC = () => {
             <div className="p-6">
               <div className="grid lg:grid-cols-2 gap-8">
                 {/* 左側: 説明と技術 */}
-                <div className="space-y-6">
+                <div className="space-y-2">
                   <div>
-                    <h3 className="text-xl font-bold mb-4 text-gray-900">プロジェクト概要</h3>
-                    <p className="text-gray-700 leading-relaxed text-lg">{selectedWork.detailedDescription}</p>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900">プロジェクト概要</h3>
+                    <p className="text-gray-700 leading-relaxed text-lg whitespace-pre-wrap">{selectedWork.detailedDescription}</p>
                   </div>
                   
                   <div>
@@ -136,24 +124,7 @@ export const Works: React.FC = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <a
-                      href={selectedWork.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300"
-                    >
-                      <Github className="w-5 h-5 mr-2" />
-                      GitHub
-                    </a>
-                    <a
-                      href={selectedWork.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-300"
-                    >
-                      <ExternalLink className="w-5 h-5 mr-2" />
-                      Live Demo
-                    </a>
+                    <WorkLinks work={selectedWork} />
                   </div>
                 </div>
                 
@@ -161,11 +132,11 @@ export const Works: React.FC = () => {
                 <div className="space-y-4">
                   {/* メイン画像 */}
                   <div className="relative">
-                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden">
+                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden h-45">
                       <img
                         src={selectedWork.images[currentImageIndex]}
                         alt={`${selectedWork.title} - ${currentImageIndex + 1}`}
-                        className="w-full h-full object-cover"
+                        className="object-contain"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';

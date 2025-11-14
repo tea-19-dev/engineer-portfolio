@@ -11,6 +11,7 @@ export const skillsData = {
   ],
   "Others": [
     { name: "MySQL", level: 2, years: 3.5 },
+    { name: "GraphQL", level: 2, years: 2 },
     { name: "Docker", level: 2, years: 2 },
     { name: "AWS", level: 1, years: 0 },
     { name: "Git", level: 3, years: 4 },
