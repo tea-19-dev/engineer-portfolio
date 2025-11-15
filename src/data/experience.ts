@@ -25,6 +25,6 @@ export const experienceData = [
     company: "toB Saas 自社開発",
     position: "エンジニア",
     period: "2025年6月 - 現在",
-    description: "エンジニア数名で、 Saasの保守・開発（Rails,React,GraphQL）。自社開発ならではの要件定義フェーズから参画でき、顧客理解や機能提案などプロダクト志向のエンジニアを意識しています。"
+    description: "エンジニア数名のチームで保守・開発（Rails・React・ GraphQL）。自社開発ならではの要件定義フェーズから参画でき、顧客理解や機能提案などプロダクト志向のエンジニアを意識しています。"
   }
 ];

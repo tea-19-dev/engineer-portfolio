@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Twitter } from 'lucide-react';
+import { Mail, Twitter } from 'lucide-react';
 import { contactData } from '../data/contact';
 import { ContactForm } from './ContactForm';
 
@@ -14,8 +14,8 @@ export const Contact: React.FC = () => {
           
           {/* 連絡先情報 */}
           <div className="max-w-2xl mx-auto mb-16">
-            <div className="flex gap-4">
-              <div className="flex items-center p-8 bg-white rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex-1">
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex items-center p-8 bg-white max-w-2xl rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mr-6">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
@@ -28,17 +28,6 @@ export const Contact: React.FC = () => {
                     {contactData.email}
                   </a>
                 </div>
-              </div>
-              
-              <div className="flex items-center justify-center p-4 bg-white rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                <a 
-                  href={contactData.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center hover:from-blue-600 hover:to-blue-800 transition-all duration-300"
-                >
-                  <Github className="w-6 h-6 text-white" />
-                </a>
               </div>
               
               <div className="flex items-center justify-center p-4 bg-white rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
