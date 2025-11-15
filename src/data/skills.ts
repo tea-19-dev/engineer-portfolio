@@ -26,7 +26,7 @@ export const skillsData = {
 
 export const skillLevels = {
   1: { title: "ビギナー", detail: "少し触った程度" },
-  2: { title: "初級者", detail: "上級者の指導が必要" }, 
+  2: { title: "脱初心者", detail: "上級者のレビューが必要" }, 
   3: { title: "中級者", detail: "自立して設計・実装" },
   4: { title: "プロ", detail: "社内でリード" },
   5: { title: "エキスパート", detail: "社外でもリード" },
