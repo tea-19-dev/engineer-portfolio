@@ -14,7 +14,7 @@ export const worksData = [
     id: 2,
     title: "筋トレモチベトラッカー",
     description: "手軽な筋トレ記録アプリ",
-    images: ["src/assets/muscle/0_main.jpg", "src/assets/muscle/1_calender.jpg", "src/assets/muscle/2_create.jpg", "src/assets/muscle/3_mobile.jpg"],
+    images: ["src/assets/muscle/0_main.jpg", "src/assets/muscle/1_calender.jpg", "src/assets/muscle/2_create.jpg", "src/assets/muscle/3_mobile.png"],
     technologies: ["v0", "Supabase", "radix-ui"],
     demo: "https://v0-awesome-training.vercel.app/",
     detailedDescription: `フルリモート勤務になり、運動不足を少しでも解消するため、モチベ維持ができる筋トレ記録アプリを制作。22週連続自重トレーニングが続いています。

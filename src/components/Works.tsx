@@ -132,11 +132,11 @@ export const Works: React.FC = () => {
                 <div className="space-y-4">
                   {/* メイン画像 */}
                   <div className="relative">
-                    <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden h-45">
+                    <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg overflow-hidden h-[40vh] flex items-center justify-center">
                       <img
                         src={selectedWork.images[currentImageIndex]}
                         alt={`${selectedWork.title} - ${currentImageIndex + 1}`}
-                        className="object-contain"
+                        className="object-contain max-w-full max-h-full"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';
@@ -179,7 +179,7 @@ export const Works: React.FC = () => {
                           <img
                             src={image}
                             alt={`${selectedWork.title} thumbnail ${index + 1}`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
                               target.style.display = 'none';
