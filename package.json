@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://tea.19.dev.github.io/portfolio/",
+  "homepage": "https://tea-19-dev.github.io/engineer-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
