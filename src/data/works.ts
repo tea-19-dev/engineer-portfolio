@@ -3,7 +3,7 @@ export const worksData = [
     id: 1,
     title: "レコ将",
     description: "将棋の対局記録の管理アプリ",
-    images: ["/src/assets/shogi/0_main.png","/src/assets/shogi/1_top.png","/src/assets/shogi/2_home.png","/src/assets/shogi/3_create.png","/src/assets/shogi/4_battle-index.png"],
+    images: ["images/shogi/0_main.png","images/shogi/1_top.png","images/shogi/2_home.png","images/shogi/3_create.png","images/shogi/4_battle-index.png"],
     technologies: ["Nuxt.js", "TypeScript", "Rails", "CloudFlare"],
     demo: "https://shogi-record.com/",
     detailedDescription: `自分自身が将棋が趣味で、将棋道場に時々行きます。その際、どの段位の方とどんな将棋を指し、結果はどうだったのか、記録をつけるアプリが欲しいと思い、自作しました。
@@ -14,7 +14,7 @@ export const worksData = [
     id: 2,
     title: "筋トレモチベトラッカー",
     description: "手軽な筋トレ記録アプリ",
-    images: ["src/assets/muscle/0_main.jpg", "src/assets/muscle/1_calender.jpg", "src/assets/muscle/2_create.jpg", "src/assets/muscle/3_mobile.png"],
+    images: ["images/muscle/0_main.jpg", "images/muscle/1_calender.jpg", "images/muscle/2_create.jpg", "images/muscle/3_mobile.png"],
     technologies: ["v0", "Supabase", "radix-ui"],
     demo: "https://v0-awesome-training.vercel.app/",
     detailedDescription: `フルリモート勤務になり、運動不足を少しでも解消するため、モチベ維持ができる筋トレ記録アプリを制作。22週連続自重トレーニングが続いています。
@@ -25,7 +25,7 @@ export const worksData = [
     id: 3,
     title: "ポートフォリオ",
     description: "エンジニアとしての自己紹介",
-    images: ["src/assets/portfolio/0_main.jpg", "src/assets/portfolio/1_skills.jpg", "src/assets/portfolio/2_philosophy.jpg"],
+    images: ["images/portfolio/0_main.jpg", "images/portfolio/1_skills.jpg", "images/portfolio/2_philosophy.jpg"],
     technologies: ["Bolt.new", "React", "Tailwind CSS", "Github Pages"],
     github: "https://github.com/tea-19-dev/engineer-portfolio",
     detailedDescription: `v0 以外のAIローコードツールを試したく、Boltで制作。トークンの無料枠が少ないため、手直しもしています。
