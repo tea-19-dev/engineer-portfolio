@@ -2,7 +2,7 @@
 
 * 4年目Webエンジニア Tea のポートフォリオ
 * 実際のサイトは下記からご覧ください
-  * https://tea-19-dev.github.io/portfolio/
+  * https://tea-19-dev.github.io/engineer-portfolio/
 
 ## 概要
 
