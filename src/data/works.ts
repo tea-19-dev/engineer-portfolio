@@ -25,7 +25,7 @@ export const worksData = [
     id: 3,
     title: "ポートフォリオ",
     description: "エンジニアとしての自己紹介",
-    images: ["images/portfolio/0_main.jpg", "images/portfolio/1_skills.jpg", "images/portfolio/2_philosophy.jpg"],
+    images: ["images/portfolio/0_main.png", "images/portfolio/1_skills.jpg", "images/portfolio/2_philosophy.jpg"],
     technologies: ["Bolt.new", "React", "Tailwind CSS", "Github Pages"],
     github: "https://github.com/tea-19-dev/engineer-portfolio",
     detailedDescription: `v0 以外のAIローコードツールを試したく、Boltで制作。トークンの無料枠が少ないため、手直しもしています。
