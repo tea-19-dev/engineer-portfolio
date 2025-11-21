@@ -5,7 +5,7 @@ export const worksData = [
     description: "将棋の対局記録の管理アプリ",
     images: ["images/shogi/0_main.png","images/shogi/1_top.png","images/shogi/2_home.png","images/shogi/3_create.png","images/shogi/4_battle-index.png"],
     technologies: ["Nuxt.js", "TypeScript", "Rails", "CloudFlare"],
-    demo: "https://shogi-record.com/",
+    demo: "",
     detailedDescription: `自分自身が将棋が趣味で、将棋道場に時々行きます。その際、どの段位の方とどんな将棋を指し、結果はどうだったのか、記録をつけるアプリが欲しいと思い、自作しました。
 機能面：シンプルで使いやすいUIを意識しつつ、戦術の相性や得意・不得意の分析に繋げられるよう、詳しい項目を入力可能に。
 技術面：AI未使用。Nuxtを使ったSPAにしつつ、個人開発でもテストを書いて品質担保し、拡張性を意識。`
