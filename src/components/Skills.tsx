@@ -1,6 +1,6 @@
 import React from 'react';
 import { skillsData, skillLevels } from '../data/skills';
-import { Star, Clock } from 'lucide-react';
+import { Star, Clock, ExternalLink } from 'lucide-react';
 
 interface Skill {
   name: string;
@@ -35,11 +35,11 @@ export const Skills: React.FC = () => {
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-8 text-center">Skills</h2>
           
           {/* スキルレベル詳細説明 */}
-          <div className="max-w-5xl mx-auto mb-12 bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-            <h3 className="text-xl font-bold mb-6 text-center text-gray-900">スキルレベル詳細</h3>
+          <div className="max-w-5xl mx-auto mb-12 bg-white p-8 pb-5 rounded-2xl shadow-xl border border-gray-100">
+            <h3 className="text-xl font-bold mb-6 text-center text-gray-900">スキルレベル</h3>
             <div className="grid md:grid-cols-5 gap-4">
               {Object.entries(skillLevels).map(([level, details]) => (
-                <div key={level} className="text-center p-4 bg-gray-50 rounded-lg">
+                <div key={level} className="text-center py-4 px-2 bg-gray-50 rounded-lg">
                   <div className="flex justify-center mb-2">
                     {renderStars(parseInt(level))}
                   </div>
@@ -47,6 +47,17 @@ export const Skills: React.FC = () => {
                   <div className="text-sm text-gray-600">{details.detail}</div>
                 </div>
               ))}
+            </div>
+            <div className="flex justify-end">
+              <a
+                href="https://zenn.dev/tea_19/articles/c88072894d62ec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center px-4 py-2 mt-4 w-40 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 border border-gray-200"
+                >
+                詳細はこちら
+                <ExternalLink className="w-5 h-5 ml-2" />
+              </a>
             </div>
           </div>
           
